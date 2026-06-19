@@ -1,0 +1,15 @@
+Coloque aqui as fotos do casal.
+
+FICHEIROS USADOS NO SITE:
+  capa.jpg        → foto de capa na tela de abertura (rosto do casal, boa iluminação)
+  noivos.jpg      → foto dos dois na secção "Os Noivos" (preferencialmente vertical)
+  hero.jpg        → foto de fundo na secção principal após abrir o convite
+
+FORMATO RECOMENDADO:
+  • Tipo:     JPG ou PNG
+  • Tamanho:  máx. 2 MB por ficheiro
+  • Resolução mínima: 1200 × 900 px (largura × altura)
+
+COMO USAR: depois de colocar as fotos aqui, abra o ficheiro:
+  src/data/weddingData.js
+e substitua os valores de couplePhotos.

@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/cormorant-garamond/300.css";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+
+:root {
+  /* Paleta refinada — mais neutra e sofisticada */
+  --cream:       #faf8f5;
+  --cream2:      #f3efe8;
+  --cream3:      #ede8df;
+  --beige:       #e0d8cc;
+  --beige2:      #cec5b6;
+  --gold:        #b09060;
+  --gold2:       #c8a878;
+  --gold-light:  #e8d4a8;
+  --gold-pale:   #f5edd8;
+  --brown:       #4a3525;
+  --brown2:      #6a5040;
+  --text:        #2e2018;
+  --text2:       #6a5848;
+  --text3:       #9a8878;
+  --white:       #ffffff;
+
+  --font-d: 'Playfair Display', Georgia, serif;
+  --font-b: 'Cormorant Garamond', Georgia, serif;
+  --font-u: 'Poppins', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--font-b);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+button { font-family: inherit; }
+a { color: inherit; }
+::selection { background: rgba(176,144,96,0.18); }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--cream2); }
+::-webkit-scrollbar-thumb { background: var(--gold2); border-radius: 2px; }
+
+/* Label style */
+.lbl {
+  font-family: var(--font-u);
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Ornament divider */
+.orn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+}
+.orn::before, .orn::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--beige2));
+}
+.orn::after {
+  background: linear-gradient(90deg, var(--beige2), transparent);
+}
+
+/* Petal animation */
+@keyframes petal-fall {
+  0%   { transform: translateY(-20px) rotate(0deg) translateX(0); opacity: 0; }
+  8%   { opacity: 0.8; }
+  92%  { opacity: 0.4; }
+  100% { transform: translateY(102vh) rotate(540deg) translateX(30px); opacity: 0; }
+}
+
+/* Section base */
+.section { padding: clamp(72px,10vw,120px) clamp(20px,5vw,40px); }
+.section-narrow { max-width: 640px; margin: 0 auto; }
+.section-wide   { max-width: 1080px; margin: 0 auto; }
+
+@media (max-width: 480px) {
+  .lbl { font-size: 0.52rem; letter-spacing: 0.28em; }
+}

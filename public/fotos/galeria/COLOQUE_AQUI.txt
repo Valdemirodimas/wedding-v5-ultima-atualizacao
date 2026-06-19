@@ -1,0 +1,12 @@
+Coloque aqui as fotos da galeria do site.
+
+NOME DOS FICHEIROS (pode usar qualquer nome, ex. foto1.jpg, foto2.jpg …)
+O site usa as primeiras 8 fotos encontradas na lista de galleryPhotos
+do ficheiro src/data/weddingData.js
+
+FORMATO RECOMENDADO:
+  • Tipo:     JPG ou PNG
+  • Tamanho:  máx. 1.5 MB por ficheiro
+  • Resolução mínima: 800 × 800 px
+
+DICA: pode adicionar quantas quiser — basta adicionar mais linhas em galleryPhotos.

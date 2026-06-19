@@ -1,0 +1,12 @@
+Coloque aqui o ficheiro de música MP3.
+
+FICHEIRO ESPERADO:
+  tema.mp3   (pode ser qualquer canção — valsa, música moçambicana, etc.)
+
+FORMATO:
+  • Tipo:   MP3 (recomendado) ou OGG
+  • Tamanho: máx. 8 MB
+  • Duração: idealmente em loop suave
+
+COMO ACTIVAR: veja o ficheiro src/data/weddingData.js
+e mude musicaLocal: false → true
