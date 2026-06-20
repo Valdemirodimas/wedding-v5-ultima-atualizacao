@@ -34,8 +34,8 @@ export const galleryPhotos = usarFotosLocais
       '/fotos/galeria/foto3.jpeg',
       '/fotos/galeria/foto4.jpeg',
       '/fotos/galeria/foto5.jpeg',
-      '/fotos/galeria/foto1 (3).jpeg',
-      '/fotos/galeria/foto1 (4).jpeg',
+      '/fotos/galeria/foto6.jpeg',
+      '/fotos/galeria/foto8.jpeg',
     ]
   : [
       'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80',
